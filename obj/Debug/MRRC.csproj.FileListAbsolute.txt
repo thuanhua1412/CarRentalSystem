@@ -1,0 +1,12 @@
+C:\Users\Justin\Desktop\CAB201\Assignment\MRRC\MRRC\bin\Debug\MRRC.exe.config
+C:\Users\Justin\Desktop\CAB201\Assignment\MRRC\MRRC\bin\Debug\MRRC.exe
+C:\Users\Justin\Desktop\CAB201\Assignment\MRRC\MRRC\bin\Debug\MRRC.pdb
+C:\Users\Justin\Desktop\CAB201\Assignment\MRRC\MRRC\bin\Debug\MRRCManagement.dll
+C:\Users\Justin\Desktop\CAB201\Assignment\MRRC\MRRC\bin\Debug\MRRCManagement.pdb
+C:\Users\Justin\Desktop\CAB201\Assignment\MRRC\MRRC\obj\Debug\MRRC.csprojResolveAssemblyReference.cache
+C:\Users\Justin\Desktop\CAB201\Assignment\MRRC\MRRC\obj\Debug\MRRC.Form1.resources
+C:\Users\Justin\Desktop\CAB201\Assignment\MRRC\MRRC\obj\Debug\MRRC.Properties.Resources.resources
+C:\Users\Justin\Desktop\CAB201\Assignment\MRRC\MRRC\obj\Debug\MRRC.csproj.GenerateResource.Cache
+C:\Users\Justin\Desktop\CAB201\Assignment\MRRC\MRRC\obj\Debug\MRRC.csproj.CoreCompileInputs.cache
+C:\Users\Justin\Desktop\CAB201\Assignment\MRRC\MRRC\obj\Debug\MRRC.exe
+C:\Users\Justin\Desktop\CAB201\Assignment\MRRC\MRRC\obj\Debug\MRRC.pdb
