@@ -88,12 +88,9 @@ namespace CarRentalSystem
             cmbSearchCustomer.Items.Clear();
             for (int i = 0; i < customerList.Count; i++)
             {
-                if (currentFleet.IsRenting(customerList[i].CustomerID) == false)
-                {
                     // Append information if customers are not renting
                     cmbSearchCustomer.Items.Add(string.Format("{0} - {1} {2} {3}", customerList[i].CustomerID,
                     customerList[i].Title, customerList[i].FirstName, customerList[i].LastName));
-                }
             }
         } // end SetupcmbSearchCustomer() method
 
@@ -1379,6 +1376,9 @@ namespace CarRentalSystem
             {
                 btnReportReturnVehicle.Enabled = false;
             }
+            else {
+                btnReportReturnVehicle.Enabled = true;
+            }
         }
 
         /// <summary>
@@ -1760,6 +1760,20 @@ namespace CarRentalSystem
                 lblServiceCostInvalid.Text = "!";
                 lblServiceCostInvalid.ForeColor = Color.Red;
             }
+        }
+
+        private void btnServiceReportShowAll_Click(object sender, EventArgs e)
+        {
+            ServiceReport report = new ServiceReport();
+            dgvServiceReport.Rows.Clear();
+            foreach (Service x in report.GetService())
+            {
+                foreach (Vehicle y in x.vehicles) {
+                    dgvServiceReport.Rows.Add(y.VehicleRego, y.Make, y.Model, y.Year, x.isServiceEngine, x.isServiceTransmission, x.isServiceTires, x.date, x.mileAge, x.cost, x.garage);
+                    Console.Write(y.VehicleRego);
+                }
+            }
+            dgvServiceReport.Visible = true;
         }
     }
 }

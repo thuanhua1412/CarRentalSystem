@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tab_control1 = new System.Windows.Forms.TabControl();
             this.tpFleet = new System.Windows.Forms.TabPage();
             this.gbFleetAddVehicle = new System.Windows.Forms.GroupBox();
@@ -208,6 +208,17 @@
             this.cmbServiceEnterQueryHere = new System.Windows.Forms.TextBox();
             this.tpServiceReport = new System.Windows.Forms.TabPage();
             this.dgvServiceReport = new System.Windows.Forms.DataGridView();
+            this.dgvServiceReportRego = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvServiceReportMake = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvServiceReportModel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvServiceReportYear = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvServiceReportServiceEngine = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dgvServiceReportServiceTransmisson = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dgvServiceReportServiceTires = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dgvServiceReportDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvServiceReportDistanceMeter = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvServiceReportCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvServiceReportGarage = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbServiceReportSearchServiceHistory = new System.Windows.Forms.GroupBox();
             this.label19 = new System.Windows.Forms.Label();
             this.cmbServiceReportCarName = new System.Windows.Forms.ComboBox();
@@ -220,17 +231,7 @@
             this.ttFleetClass = new System.Windows.Forms.ToolTip(this.components);
             this.ttFleetYear = new System.Windows.Forms.ToolTip(this.components);
             this.ttCustomerDOB = new System.Windows.Forms.ToolTip(this.components);
-            this.dgvServiceReportRego = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvServiceReportMake = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvServiceReportModel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvServiceReportYear = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvServiceReportServiceEngine = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dgvServiceReportServiceTransmisson = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dgvServiceReportServiceTires = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dgvServiceReportDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvServiceReportDistanceMeter = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvServiceReportCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvServiceReportGarage = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnServiceReportShowAll = new System.Windows.Forms.Button();
             this.tab_control1.SuspendLayout();
             this.tpFleet.SuspendLayout();
             this.gbFleetAddVehicle.SuspendLayout();
@@ -276,7 +277,6 @@
             this.tab_control1.SelectedIndex = 0;
             this.tab_control1.Size = new System.Drawing.Size(1211, 654);
             this.tab_control1.TabIndex = 0;
-            this.tab_control1.SelectedIndexChanged += new System.EventHandler(this.tab_control1_SelectedIndexChanged);
             // 
             // tpFleet
             // 
@@ -693,14 +693,14 @@
             // dgvFleet
             // 
             this.dgvFleet.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle39.BackColor = System.Drawing.Color.DarkGray;
-            dataGridViewCellStyle39.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle39.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFleet.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle39;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle27.BackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFleet.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle27;
             this.dgvFleet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvFleet.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgvFleetRego,
@@ -723,8 +723,8 @@
             this.dgvFleet.Name = "dgvFleet";
             this.dgvFleet.ReadOnly = true;
             this.dgvFleet.RowHeadersWidth = 51;
-            dataGridViewCellStyle40.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFleet.RowsDefaultCellStyle = dataGridViewCellStyle40;
+            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFleet.RowsDefaultCellStyle = dataGridViewCellStyle28;
             this.dgvFleet.RowTemplate.Height = 40;
             this.dgvFleet.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvFleet.Size = new System.Drawing.Size(1197, 532);
@@ -1105,14 +1105,14 @@
             // dgvCustomer
             // 
             this.dgvCustomer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle41.BackColor = System.Drawing.Color.DarkGray;
-            dataGridViewCellStyle41.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle41.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle41;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle29.BackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle29;
             this.dgvCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCustomer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgvCustomerID,
@@ -1127,8 +1127,8 @@
             this.dgvCustomer.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.dgvCustomer.Name = "dgvCustomer";
             this.dgvCustomer.RowHeadersWidth = 51;
-            dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCustomer.RowsDefaultCellStyle = dataGridViewCellStyle42;
+            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCustomer.RowsDefaultCellStyle = dataGridViewCellStyle30;
             this.dgvCustomer.RowTemplate.Height = 40;
             this.dgvCustomer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvCustomer.Size = new System.Drawing.Size(1197, 538);
@@ -1235,14 +1235,14 @@
             // dgvReport
             // 
             this.dgvReport.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle43.BackColor = System.Drawing.Color.DarkGray;
-            dataGridViewCellStyle43.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle43.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle43.SelectionBackColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle43.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle43.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvReport.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle43;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle31.BackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle31.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvReport.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle31;
             this.dgvReport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvReport.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgvReportRego,
@@ -1254,8 +1254,8 @@
             this.dgvReport.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.dgvReport.Name = "dgvReport";
             this.dgvReport.RowHeadersWidth = 51;
-            dataGridViewCellStyle44.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvReport.RowsDefaultCellStyle = dataGridViewCellStyle44;
+            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvReport.RowsDefaultCellStyle = dataGridViewCellStyle32;
             this.dgvReport.RowTemplate.Height = 40;
             this.dgvReport.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvReport.Size = new System.Drawing.Size(1203, 538);
@@ -1331,14 +1331,14 @@
             // dgvSearch
             // 
             this.dgvSearch.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle45.BackColor = System.Drawing.Color.DarkGray;
-            dataGridViewCellStyle45.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle45.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle45.SelectionBackColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle45.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle45.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSearch.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle45;
+            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle33.BackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle33.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSearch.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle33;
             this.dgvSearch.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSearch.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -1359,8 +1359,8 @@
             this.dgvSearch.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.dgvSearch.Name = "dgvSearch";
             this.dgvSearch.RowHeadersWidth = 51;
-            dataGridViewCellStyle46.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSearch.RowsDefaultCellStyle = dataGridViewCellStyle46;
+            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSearch.RowsDefaultCellStyle = dataGridViewCellStyle34;
             this.dgvSearch.RowTemplate.Height = 40;
             this.dgvSearch.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvSearch.Size = new System.Drawing.Size(1175, 364);
@@ -1503,7 +1503,7 @@
             this.cmbSearchCustomer.Name = "cmbSearchCustomer";
             this.cmbSearchCustomer.Size = new System.Drawing.Size(207, 24);
             this.cmbSearchCustomer.TabIndex = 6;
-            this.cmbSearchCustomer.SelectedIndexChanged += new System.EventHandler(this.cmbSearchCustomer_SelectedIndexChanged);
+            this.cmbSearchCustomer.SelectedIndexChanged += new System.EventHandler(this.cmbServiceEnterQueryHere_Click);
             // 
             // lblSearchTotalCost
             // 
@@ -1654,14 +1654,14 @@
             // dgvService
             // 
             this.dgvService.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle37.BackColor = System.Drawing.Color.DarkGray;
-            dataGridViewCellStyle37.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle37.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvService.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle37;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle35.BackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle35.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvService.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle35;
             this.dgvService.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvService.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgvServiceRego,
@@ -1682,8 +1682,8 @@
             this.dgvService.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.dgvService.Name = "dgvService";
             this.dgvService.RowHeadersWidth = 51;
-            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvService.RowsDefaultCellStyle = dataGridViewCellStyle38;
+            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvService.RowsDefaultCellStyle = dataGridViewCellStyle36;
             this.dgvService.RowTemplate.Height = 40;
             this.dgvService.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvService.Size = new System.Drawing.Size(1175, 401);
@@ -2097,14 +2097,14 @@
             // dgvServiceReport
             // 
             this.dgvServiceReport.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle47.BackColor = System.Drawing.Color.DarkGray;
-            dataGridViewCellStyle47.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle47.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvServiceReport.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle47;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle25.BackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvServiceReport.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle25;
             this.dgvServiceReport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvServiceReport.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgvServiceReportRego,
@@ -2124,24 +2124,108 @@
             this.dgvServiceReport.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.dgvServiceReport.Name = "dgvServiceReport";
             this.dgvServiceReport.RowHeadersWidth = 51;
-            dataGridViewCellStyle48.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvServiceReport.RowsDefaultCellStyle = dataGridViewCellStyle48;
+            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvServiceReport.RowsDefaultCellStyle = dataGridViewCellStyle26;
             this.dgvServiceReport.RowTemplate.Height = 40;
             this.dgvServiceReport.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvServiceReport.Size = new System.Drawing.Size(1203, 428);
             this.dgvServiceReport.TabIndex = 3;
             this.dgvServiceReport.Visible = false;
             // 
+            // dgvServiceReportRego
+            // 
+            this.dgvServiceReportRego.HeaderText = "Rego";
+            this.dgvServiceReportRego.MinimumWidth = 6;
+            this.dgvServiceReportRego.Name = "dgvServiceReportRego";
+            this.dgvServiceReportRego.ReadOnly = true;
+            // 
+            // dgvServiceReportMake
+            // 
+            this.dgvServiceReportMake.HeaderText = "Make";
+            this.dgvServiceReportMake.MinimumWidth = 6;
+            this.dgvServiceReportMake.Name = "dgvServiceReportMake";
+            this.dgvServiceReportMake.ReadOnly = true;
+            // 
+            // dgvServiceReportModel
+            // 
+            this.dgvServiceReportModel.HeaderText = "Model";
+            this.dgvServiceReportModel.MinimumWidth = 6;
+            this.dgvServiceReportModel.Name = "dgvServiceReportModel";
+            this.dgvServiceReportModel.ReadOnly = true;
+            // 
+            // dgvServiceReportYear
+            // 
+            this.dgvServiceReportYear.HeaderText = "Year";
+            this.dgvServiceReportYear.MinimumWidth = 6;
+            this.dgvServiceReportYear.Name = "dgvServiceReportYear";
+            this.dgvServiceReportYear.ReadOnly = true;
+            // 
+            // dgvServiceReportServiceEngine
+            // 
+            this.dgvServiceReportServiceEngine.HeaderText = "Service Engine";
+            this.dgvServiceReportServiceEngine.MinimumWidth = 6;
+            this.dgvServiceReportServiceEngine.Name = "dgvServiceReportServiceEngine";
+            this.dgvServiceReportServiceEngine.ReadOnly = true;
+            this.dgvServiceReportServiceEngine.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvServiceReportServiceEngine.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // dgvServiceReportServiceTransmisson
+            // 
+            this.dgvServiceReportServiceTransmisson.HeaderText = "Service Transmisstion";
+            this.dgvServiceReportServiceTransmisson.MinimumWidth = 6;
+            this.dgvServiceReportServiceTransmisson.Name = "dgvServiceReportServiceTransmisson";
+            this.dgvServiceReportServiceTransmisson.ReadOnly = true;
+            this.dgvServiceReportServiceTransmisson.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvServiceReportServiceTransmisson.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // dgvServiceReportServiceTires
+            // 
+            this.dgvServiceReportServiceTires.HeaderText = "Service Tires";
+            this.dgvServiceReportServiceTires.MinimumWidth = 6;
+            this.dgvServiceReportServiceTires.Name = "dgvServiceReportServiceTires";
+            this.dgvServiceReportServiceTires.ReadOnly = true;
+            this.dgvServiceReportServiceTires.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvServiceReportServiceTires.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // dgvServiceReportDate
+            // 
+            this.dgvServiceReportDate.HeaderText = "Date";
+            this.dgvServiceReportDate.MinimumWidth = 6;
+            this.dgvServiceReportDate.Name = "dgvServiceReportDate";
+            this.dgvServiceReportDate.ReadOnly = true;
+            // 
+            // dgvServiceReportDistanceMeter
+            // 
+            this.dgvServiceReportDistanceMeter.HeaderText = "Distance Meter";
+            this.dgvServiceReportDistanceMeter.MinimumWidth = 6;
+            this.dgvServiceReportDistanceMeter.Name = "dgvServiceReportDistanceMeter";
+            this.dgvServiceReportDistanceMeter.ReadOnly = true;
+            // 
+            // dgvServiceReportCost
+            // 
+            this.dgvServiceReportCost.HeaderText = "Cost";
+            this.dgvServiceReportCost.MinimumWidth = 6;
+            this.dgvServiceReportCost.Name = "dgvServiceReportCost";
+            this.dgvServiceReportCost.ReadOnly = true;
+            // 
+            // dgvServiceReportGarage
+            // 
+            this.dgvServiceReportGarage.HeaderText = "Garage";
+            this.dgvServiceReportGarage.MinimumWidth = 6;
+            this.dgvServiceReportGarage.Name = "dgvServiceReportGarage";
+            this.dgvServiceReportGarage.ReadOnly = true;
+            // 
             // gbServiceReportSearchServiceHistory
             // 
+            this.gbServiceReportSearchServiceHistory.Controls.Add(this.btnServiceReportShowAll);
             this.gbServiceReportSearchServiceHistory.Controls.Add(this.label19);
             this.gbServiceReportSearchServiceHistory.Controls.Add(this.cmbServiceReportCarName);
             this.gbServiceReportSearchServiceHistory.Controls.Add(this.btnServiceReportSearch);
-            this.gbServiceReportSearchServiceHistory.Location = new System.Drawing.Point(837, 502);
+            this.gbServiceReportSearchServiceHistory.Location = new System.Drawing.Point(740, 505);
             this.gbServiceReportSearchServiceHistory.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.gbServiceReportSearchServiceHistory.Name = "gbServiceReportSearchServiceHistory";
             this.gbServiceReportSearchServiceHistory.Padding = new System.Windows.Forms.Padding(3, 1, 3, 1);
-            this.gbServiceReportSearchServiceHistory.Size = new System.Drawing.Size(363, 81);
+            this.gbServiceReportSearchServiceHistory.Size = new System.Drawing.Size(460, 96);
             this.gbServiceReportSearchServiceHistory.TabIndex = 2;
             this.gbServiceReportSearchServiceHistory.TabStop = false;
             this.gbServiceReportSearchServiceHistory.Text = "Search Service History";
@@ -2227,88 +2311,16 @@
             this.ttFleetYear.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Warning;
             this.ttFleetYear.ToolTipTitle = "Warning";
             // 
-            // dgvServiceReportRego
+            // btnServiceReportShowAll
             // 
-            this.dgvServiceReportRego.HeaderText = "Rego";
-            this.dgvServiceReportRego.MinimumWidth = 6;
-            this.dgvServiceReportRego.Name = "dgvServiceReportRego";
-            this.dgvServiceReportRego.ReadOnly = true;
-            // 
-            // dgvServiceReportMake
-            // 
-            this.dgvServiceReportMake.HeaderText = "Make";
-            this.dgvServiceReportMake.MinimumWidth = 6;
-            this.dgvServiceReportMake.Name = "dgvServiceReportMake";
-            this.dgvServiceReportMake.ReadOnly = true;
-            // 
-            // dgvServiceReportModel
-            // 
-            this.dgvServiceReportModel.HeaderText = "Model";
-            this.dgvServiceReportModel.MinimumWidth = 6;
-            this.dgvServiceReportModel.Name = "dgvServiceReportModel";
-            this.dgvServiceReportModel.ReadOnly = true;
-            // 
-            // dgvServiceReportYear
-            // 
-            this.dgvServiceReportYear.HeaderText = "Year";
-            this.dgvServiceReportYear.MinimumWidth = 6;
-            this.dgvServiceReportYear.Name = "dgvServiceReportYear";
-            this.dgvServiceReportYear.ReadOnly = true;
-            // 
-            // dgvServiceReportServiceEngine
-            // 
-            this.dgvServiceReportServiceEngine.HeaderText = "Service Engine";
-            this.dgvServiceReportServiceEngine.MinimumWidth = 6;
-            this.dgvServiceReportServiceEngine.Name = "dgvServiceReportServiceEngine";
-            this.dgvServiceReportServiceEngine.ReadOnly = true;
-            this.dgvServiceReportServiceEngine.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvServiceReportServiceEngine.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // dgvServiceReportServiceTransmisson
-            // 
-            this.dgvServiceReportServiceTransmisson.HeaderText = "Service Transmisstion";
-            this.dgvServiceReportServiceTransmisson.MinimumWidth = 6;
-            this.dgvServiceReportServiceTransmisson.Name = "dgvServiceReportServiceTransmisson";
-            this.dgvServiceReportServiceTransmisson.ReadOnly = true;
-            this.dgvServiceReportServiceTransmisson.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvServiceReportServiceTransmisson.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // dgvServiceReportServiceTires
-            // 
-            this.dgvServiceReportServiceTires.HeaderText = "Service Tires";
-            this.dgvServiceReportServiceTires.MinimumWidth = 6;
-            this.dgvServiceReportServiceTires.Name = "dgvServiceReportServiceTires";
-            this.dgvServiceReportServiceTires.ReadOnly = true;
-            this.dgvServiceReportServiceTires.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvServiceReportServiceTires.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // dgvServiceReportDate
-            // 
-            this.dgvServiceReportDate.HeaderText = "Date";
-            this.dgvServiceReportDate.MinimumWidth = 6;
-            this.dgvServiceReportDate.Name = "dgvServiceReportDate";
-            this.dgvServiceReportDate.ReadOnly = true;
-            // 
-            // dgvServiceReportDistanceMeter
-            // 
-            this.dgvServiceReportDistanceMeter.HeaderText = "Distance Meter";
-            this.dgvServiceReportDistanceMeter.MinimumWidth = 6;
-            this.dgvServiceReportDistanceMeter.Name = "dgvServiceReportDistanceMeter";
-            this.dgvServiceReportDistanceMeter.ReadOnly = true;
-            // 
-            // dgvServiceReportCost
-            // 
-            this.dgvServiceReportCost.HeaderText = "Cost";
-            this.dgvServiceReportCost.MinimumWidth = 6;
-            this.dgvServiceReportCost.Name = "dgvServiceReportCost";
-            this.dgvServiceReportCost.ReadOnly = true;
-            // 
-            // dgvServiceReportGarage
-            // 
-            this.dgvServiceReportGarage.HeaderText = "Garage";
-            this.dgvServiceReportGarage.MinimumWidth = 6;
-            this.dgvServiceReportGarage.Name = "dgvServiceReportGarage";
-            this.dgvServiceReportGarage.ReadOnly = true;
+            this.btnServiceReportShowAll.Location = new System.Drawing.Point(350, 30);
+            this.btnServiceReportShowAll.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.btnServiceReportShowAll.Name = "btnServiceReportShowAll";
+            this.btnServiceReportShowAll.Size = new System.Drawing.Size(101, 39);
+            this.btnServiceReportShowAll.TabIndex = 11;
+            this.btnServiceReportShowAll.Text = "Show All";
+            this.btnServiceReportShowAll.UseVisualStyleBackColor = true;
+            this.btnServiceReportShowAll.Click += new System.EventHandler(this.btnServiceReportShowAll_Click);
             // 
             // Form1
             // 
@@ -2558,5 +2570,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvServiceReportDistanceMeter;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvServiceReportCost;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvServiceReportGarage;
+        private System.Windows.Forms.Button btnServiceReportShowAll;
     }
 }
